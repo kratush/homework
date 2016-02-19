@@ -18,10 +18,10 @@ elseif ($age > 59){
     echo "Вам пора на пенсию";
 }
 //7
-elseif($age > 0 && $age <= 17) {
+elseif($age >= 0 && $age <= 17) {
     echo "Вам еще рано работать";
 }
 //8
-elseif($age <= 0 || $age !== (int)$age) {
+elseif($age < 0 || $age !== (int)$age) {
     echo "Неизвестный возраст";
 }
